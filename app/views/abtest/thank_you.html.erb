@@ -1,0 +1,5 @@
+<% if flash[:notice] %>
+<h3><%= flash[:notice] %></h3>
+<% end %>
+
+<%= link_to 'New test', abtest_reset_test_path %>

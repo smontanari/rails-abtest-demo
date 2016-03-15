@@ -1,0 +1,11 @@
+<h1>Do it A/B test</h1>
+<p>Do it only if the color pleases you</p>
+
+<%= form_tag(controller: 'abtest', action: 'do_it') do %>
+  <%= button_tag(name: 'user_choice', value: 'done_it', style: "color: white;background-color: #{ab_test(:do_it_options)}") do %>
+  DO IT
+  <% end %>
+  <%= button_tag(name: 'user_choice', value: 'not_done_it', style: "color: white;background-color: grey") do %>
+  NAH...
+  <% end %>
+<% end %>

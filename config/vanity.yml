@@ -1,0 +1,11 @@
+development:
+  adapter: active_record
+  active_record_adapter: sqlite3
+  database: db/development.sqlite3
+test:
+  adapter: active_record
+  active_record_adapter: default
+  collecting: false
+production:
+  adapter: active_record
+  active_record_adapter: default
